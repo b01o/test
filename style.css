@@ -1,0 +1,84 @@
+img {
+  vertical-align: middle;
+}
+
+.logo {
+  max-height: 30px;
+  /* float: left; */
+  padding-right: 5px;
+}
+
+code {
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .sitename {
+    /* display: none; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .logo {
+    max-height: 40px;
+  }
+  article {
+    margin: 50px 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-body: #222;
+  }
+}
+
+.sitename {
+  font: larger;
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu-left {
+  float: left;
+}
+
+.menu-right {
+  float: right;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.menu ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.menu div > ul > li > a {
+  color: var(--fg) !important;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 0em;
+  text-decoration: none;
+}
+
+.menu > div.menu-right > ul > li > a {
+  padding: 0.5em 0.5em;
+}
+
+body > footer {
+  font-size: small;
+}
